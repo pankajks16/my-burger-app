@@ -10,3 +10,9 @@
     height: 100%;
     padding: 2px;
 }
+
+@media (max-width: 499px) {
+    .Logo {
+        background-color: lavender;
+    }
+}

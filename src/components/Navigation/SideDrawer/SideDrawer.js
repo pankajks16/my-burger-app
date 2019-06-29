@@ -2,19 +2,22 @@ import React from 'react';
 
 import Logo from '../../Logo/Logo';
 import NavigationItems from '../NavigationItems/NavigationItems';
+import Backdrop from '../../UI/Backdrop/Backdrop';
 import classes from './SideDrawer.module.css';
 
 const sideDrawer = (props) => {
     return (
-        <div className={classes.SideDrawer}>
-            <div className={classes.Logo}>
-                <Logo />
+        <>
+            <Backdrop show={props.open} clicked={props.closed}/>
+            <div className={classes.SideDrawer}>
+                <div className={classes.Logo}>
+                    <Logo sideDrawer />
+                </div>
+                <nav>
+                    <NavigationItems />
+                </nav>
             </div>
-            <div>Pankaj</div>
-            <nav>
-                <NavigationItems />
-            </nav>
-        </div>
+        </>
     );
 }
 
