@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Aux from '../../hoc/Auxs';
+import Aux from '../../hoc/Auxs/Auxs';
 import classes from './Layout.module.css';
 import Toolbar from '../Navigation/Toolbar/Toolbar';
 import SideDrawer from '../Navigation/SideDrawer/SideDrawer';
